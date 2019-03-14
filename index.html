@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>s̶n̶a̶k̶e̶ green worm</title>
+  <title>crawly green boi chasing vs an apple</title>
   <style>
   html, body {
     height: 100%;
@@ -98,7 +98,7 @@ function loop() {
     // snake ate apple
     if (cell.x === apple.x && cell.y === apple.y) {
       //snake.maxCells=Math.floor(snake.maxCells/2)-1;
-      snake.maxCells-=4
+      snake.maxCells-=Math.floor((snake.maxCells/2)/2)+2
       console.log(snake.maxCells);
       
       
