@@ -81,7 +81,7 @@ function loop() {
   // remove cells as we move away from them
   if (snake.cells.length > snake.maxCells) {
     snake.cells.pop();
-    console.log("snake length"+snake.cells.length+" maxcells "+snake.maxCells);
+    //console.log("snake length"+snake.cells.length+" maxcells "+snake.maxCells);
   }
   
 
@@ -99,7 +99,7 @@ function loop() {
     if (cell.x === apple.x && cell.y === apple.y) {
       //snake.maxCells=Math.floor(snake.maxCells/2)-1;
       snake.maxCells-=Math.floor((snake.maxCells/2)/2)+2
-      console.log(snake.maxCells);
+      //console.log(snake.maxCells);
       
       
 	    while (snake.cells.length > snake.maxCells) {
